@@ -1,3 +1,66 @@
+:root {
+    --bg-color-light: #FAFAFA;
+    --main-color-light: #FFFFFF;
+    --font-color-light: #2E2A36;
+
+    --bg-color-dark: #130F1C;
+    --main-color-dark: #1F1B29;
+    --font-color-dark: #FAFAFA;
+
+    --c-secondary: #651FFF;
+
+    --fs-default: 1rem;
+}
+
+
 body {
-    background-color: #83b8c5;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Roboto';
+    font-size: var(--fs-default);
+}
+.rf__main {
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--bg-color-light);
+    color: var(--font-color-light);
+}
+.main__panel {
+    background-color: var(--bg-color-light);
+    max-width:max-content;
+    max-height: max-content;
+    border-radius: 2%;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+
+}
+
+.input-toggle {
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+.panel__toggle {
+    display: flex;
+    flex-direction: row;
+}
+.switch {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    border-style: none;
+    background-color: transparent;
+    left: -2.5%;
+}
+.toggle-background {
+    width: 1.75rem;
+    height: 1rem;
+    background-image: url(assets/images/Rectangle\ 2.svg);
 }
