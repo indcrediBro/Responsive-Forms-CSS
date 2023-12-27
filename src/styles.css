@@ -19,6 +19,14 @@ body {
     font-family: 'Roboto';
     font-size: var(--fs-default);
 }
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+button {
+    min-height: 3rem;
+}
 .rf__main {
     height: 100svh;
     width: 100svw;
@@ -29,20 +37,60 @@ body {
     background-color: var(--bg-color-light);
     color: var(--font-color-light);
 }
+.rf__main.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--font-color-dark);
+}
+.main__panel.dark-mode{
+    background-color: var(--main-color-dark);
+}
 .main__panel {
-    background-color: var(--bg-color-light);
-    max-width:max-content;
-    max-height: max-content;
+    background-color: var(--main-color-light);
+    min-width:30%;
+    min-height: 60%;
     border-radius: 2%;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 2%;
-
+    justify-content: space-between;
+    padding: 5%;
 }
-
+.spaced-equally {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    gap: 2%;
+}
+.stretch {
+    width: 100%;
+}
+.colored-btn{
+    background-color: var(--c-secondary);
+    color: #FAFAFA;
+    min-height: 3rem;
+    border: none;
+    font-size: var(--fs-default);
+}
+.btn {
+    color: var(--bg-color-light);
+    min-height: 3rem;
+    border-radius: 5%;
+    border: none;
+    background-color: var(--bg-color-light);
+}
+.btn.dark-mode{
+    background-color: var(--font-color-light);
+}
+.input-field {
+    min-width: 50%;
+    min-height: 3rem;
+    background-color: var(--bg-color-light);
+    border-style: none;
+    border-radius: 5%;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
 .input-toggle {
     font-weight: 400;
     line-height: 1.75rem;
@@ -57,10 +105,31 @@ body {
     position: relative;
     border-style: none;
     background-color: transparent;
-    left: -2.5%;
+    top: -1rem;
+    left: -8%;
 }
 .toggle-background {
     width: 1.75rem;
     height: 1rem;
     background-image: url(assets/images/Rectangle\ 2.svg);
+}
+.google.dark-mode {
+    background-image: url(assets/images/google-light.png);
+}
+.google {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(assets/images/google.png);
+    position: relative;
+    left:50%
+}
+.facebook.dark-mode {
+    background-image: url(assets/images/fb-light.png);
+}
+.facebook {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(assets/images/fb.png);
+    position: relative;
+    left:50%
 }

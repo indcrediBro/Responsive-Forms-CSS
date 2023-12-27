@@ -15,9 +15,9 @@
     <div class="main__panel toggle-mode">
         <form>
             <label for="input-label">Input Label</label><br>
-            <input type="text" class="input-field" placeholder="Placeholder Text"><br><br>
+            <input type="text" class="input-field toggle-mode" placeholder="    Placeholder Text"><br><br>
             <label for="input-label">Input Label</label><br>
-            <input type="password" class="input-field" placeholder="Placeholder Text"><br><br>
+            <input type="password" class="input-field toggle-mode" placeholder="    Placeholder Text"><br><br>
             <div class="panel__toggle">
                 <div class="toggle-background"></div>
                 <button class="switch">
@@ -25,17 +25,19 @@
                 </button>
                 <span>Subscribe to News</span>
             </div><br>
-            <input type="button" value="Sign In" class="colored-btn"><br><br>
-            <a href="#" >Forgot your password?</a><br><br>
-            <hr>
-            <p>or continue with</p>
-            <button class="uncolored-btn">
-                <img src="assets/images/Ellipse 2.svg" alt="">
-            </button>
-            <button class="uncolored-btn">
-                <img src="assets/images/Ellipse 2.svg" alt="">
-            </button>
+            <input type="submit" value="Sign In" class="colored-btn"><br><br>
+            <a href="#" style="align-self: center;">Forgot your password?</a><br>
+            <hr width="100%" color="grey">
+            <p style="align-self: center;">or continue with</p>
         </form>
+        <div class="spaced-equally">
+            <button class="btn stretch" id="toggle-mode">
+                <div class="google toggle-mode"></div>
+            </button>
+            <button class="btn stretch">
+                <div class="facebook toggle-mode"></div>
+            </button>
+        </div>
     </div>
 </div>
 <script src="/scripts.js"></script>
