@@ -16,15 +16,15 @@ toggleButton.addEventListener('click', () => {
   isDarkMode = !isDarkMode;
   content.classList.toggle('dark-mode', isDarkMode);
   panel.classList.toggle('dark-mode', isDarkMode);
-  google.classList.toggle('dark-mode', isDarkMode);
-  facebook.classList.toggle('dark-mode', isDarkMode);
+  google?.classList.toggle('dark-mode', isDarkMode);
+  facebook?.classList.toggle('dark-mode', isDarkMode);
   for (const b of btns) {
     if (isDarkMode) b.classList.add('dark-mode');
     if (!isDarkMode) b.classList.remove('dark-mode');
   }
   for (const t of toggles) {
     if (isDarkMode) t.classList.add('dark-mode');
-    if (!isDarkMode) t.classList.remove('dark-mode');
+    else if (!isDarkMode) t.classList.remove('dark-mode');
   }
 });
 

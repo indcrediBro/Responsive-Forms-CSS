@@ -11,32 +11,32 @@
     <title>Responsive Forms</title>
 </head>
 <body>
-<div class="rf__main">
-    <div class="main__panel toggle-mode">
-        <form>
-            <label for="input-label">Input Label</label><br>
-            <input type="text" class="input-field toggle-mode" placeholder="    Placeholder Text"><br><br>
-            <label for="input-label">Input Label</label><br>
-            <input type="password" class="input-field toggle-mode" placeholder="    Placeholder Text"><br><br>
+<section class="rf__main">
+    <div class="main__panel toggle">
+        <form class="stretch">
+            <label for="input-name">Input Label</label><br>
+            <input type="text" class="input-field toggle" placeholder="    Placeholder Text"><br><br>
+            <label for="input-password">Input Label</label><br>
+            <input type="password" class="input-field toggle" value="Placeholder"><br><br>
             <div class="panel__toggle">
                 <button type="menu" class="switch toggle" id="toggle-mode"></button><br> 
                 <span>Subscribe to News</span>
-            </div><br>
+            </div><br><br>
             <input type="submit" value="Sign In" class="colored-btn"><br><br>
-            <a href="#" class="center-text">Forgot your password?</a><br>
+            <a href="#" class="center-text">Forgot your password?</a><br><br>
             <hr class="stretch grey">
-            <p class="center-text">or continue with</p>
+            <p class="center-text">or continue with</p><br>
+            <div class="spaced-equally">
+                <button class="btn stretch border-outline">
+                    <div class="google toggle-mode"></div>
+                </button>
+                <button class="btn stretch border-outline">
+                    <div class="facebook toggle-mode"></div>
+                </button>
+            </div>
         </form>
-        <div class="spaced-equally">
-            <button class="btn stretch">
-                <div class="google toggle-mode"></div>
-            </button>
-            <button class="btn stretch">
-                <div class="facebook toggle-mode"></div>
-            </button>
-        </div>
     </div>
-</div>
+</section>
 <script src="/scripts.js"></script>
 </body>
 </html>

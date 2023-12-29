@@ -20,10 +20,14 @@ body {
     font-size: var(--fs-default);
 }
 form {
+    font-size: var(--fs-default);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 5%;
 }
+
+
 .rf__main {
     height: 100svh;
     width: 100svw;
@@ -44,14 +48,21 @@ form {
 .main__panel {
     background-color: var(--main-color-light);
     min-width:30%;
-    min-height: 60%;
+    min-height: fit-content;
     border-radius: 2%;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5%;
+    flex-direction: row;
+}
+.additional-info {
+    width: 23rem;
+    padding: 5% 2%;
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: var(--c-secondary);
+    color: var(--font-color-dark);
 }
 .spaced-equally {
     display: flex;
@@ -70,26 +81,50 @@ form {
     color: #FAFAFA;
     min-height: 3rem;
     border: none;
+    border-radius: .5rem;
     font-size: var(--fs-default);
 }
 .btn {
     color: var(--bg-color-light);
     min-height: 3rem;
-    border-radius: 5%;
-    border: none;
+    border-radius: .5rem;
     background-color: var(--bg-color-light);
+}
+.title-text {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+}
+.shorten {
+    width: 30%;
+}
+.align-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.border-outline {
+    border-style: groove;
+    border-color: grey;
 }
 .btn.dark-mode{
     background-color: var(--font-color-light);
 }
 .input-field {
-    min-width: 50%;
+    min-width: 95%;
     min-height: 3rem;
     background-color: var(--bg-color-light);
     border-style: none;
-    border-radius: 5%;
+    border-radius: .5rem;
     font-weight: 400;
     line-height: 1.75rem;
+    color: var(--font-color-light);
+}
+.input-field.dark-mode {
+    color: var(--font-color-dark);
+    background-color: var(--font-color-light);
+}
+.stretch-height {
+    height: 10rem;
 }
 .input-toggle {
     font-weight: 400;
