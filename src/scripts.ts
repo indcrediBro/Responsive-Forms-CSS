@@ -32,3 +32,11 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 });
+
+const checkoutBtn = document.getElementById('checkout');
+
+if (checkoutBtn) {
+  checkoutBtn.addEventListener('click', () => {
+    window.location.href = 'checkout.html';
+  });
+}
