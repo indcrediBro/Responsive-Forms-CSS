@@ -2,7 +2,7 @@ import { logDate } from './logDate';
 
 logDate();
 
-const toggleButton = document.getElementById('toggle-mode') as HTMLButtonElement;
+const toggleButton = document.querySelector('#toggle-mode') as HTMLButtonElement;
 const content = document.querySelector('.rf__main') as HTMLElement;
 const panel = document.querySelector('.main__panel') as HTMLElement;
 const btns = document.querySelectorAll('.btn');
@@ -28,15 +28,24 @@ toggleButton.addEventListener('click', () => {
   }
 });
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+const sectionButtons = document.querySelectorAll('.sectionBtn');
+const sections = document.querySelectorAll('.index');
+
+let currentIndex = 0;
+
+sectionButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    sections[currentIndex].classList.add('hidden');
+
+    currentIndex = (currentIndex + 1) % sections.length;
+
+    sections[currentIndex].classList.remove('hidden');
+  });
 });
 
-const checkoutBtn = document.getElementById('checkout');
-
-if (checkoutBtn) {
-  checkoutBtn.addEventListener('click', () => {
-    window.location.href = 'checkout.html';
+const forms = document.querySelectorAll('form');
+forms.forEach((element) => {
+  element.addEventListener('submit', (event) => {
+    event.preventDefault();
   });
-}
+});
