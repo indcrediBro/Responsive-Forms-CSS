@@ -27,11 +27,10 @@ form {
     padding: 5%;
     gap: 1rem;
 }
-
 .hidden {
     display: none;
 }
-.rf__main {
+.main {
     height: 100svh;
     width: 100svw;
     display: flex;
@@ -41,7 +40,7 @@ form {
     background-color: var(--bg-color-light);
     color: var(--font-color-light);
 }
-.rf__main.dark-mode {
+.main.dark-mode {
     background-color: var(--bg-color-dark);
     color: var(--font-color-dark);
 }
@@ -50,26 +49,28 @@ form {
 }
 .main__panel {
     background-color: var(--main-color-light);
-    min-width:30%;
-    min-height: fit-content;
+    min-width: 428px;
+    max-width: 665px;
+    min-height: 600px;
+    max-height: fit-content;
+    
     border-radius: 2%;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 .additional-info {
     width: 23rem;
     padding: 5% 2%;
-
+    
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     background-color: var(--c-secondary);
     color: var(--font-color-dark);
 }
 .spaced-equally {
-    display: flex;
-    flex-direction: row;
     justify-content: stretch;
     gap: 2%;
 }
@@ -96,6 +97,7 @@ form {
     display: flex;
     flex-direction: row;
 }
+
 .btn {
     color: var(--bg-color-light);
     min-height: 3rem;
@@ -179,4 +181,24 @@ form {
     position: relative;
     left:45%
 }
+.space-between {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
 .grey { color: grey;}
+
+@media screen and (min-width: 300px) {
+    
+    .main__panel {
+        width: 50%;
+        height: fit-content;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .additional-info {
+        display: none;
+    }
+}

@@ -11,10 +11,10 @@
     <title>Responsive Forms</title>
 </head>
 <body>
-<section class="rf__main">
-    <div class="main__panel toggle">
+<section class="main">
+    <div class="main__panel toggle row">
         <section class="index section1 stretch">
-        <form class="stretch">
+        <form class="stretch space-between">
             <label for="input-name">Input Label</label>
             <input type="text" name="input-name" class="input-field toggle" placeholder="    Placeholder Text" required>
             <label for="input-password">Input Label</label>
@@ -27,7 +27,7 @@
             <a href="#" class="center-text">Forgot your password?</a>
             <hr class="stretch grey">
             <p class="center-text">or continue with</p>
-            <div class="spaced-equally">
+            <div class="spaced-equally row">
                 <button class="contact1 btn stretch border-outline">
                     <div class="google toggle-mode"></div>
                 </button>
@@ -40,7 +40,7 @@
     <section class="section2 index stretch hidden">
         <form class="stretch">
             <span class="title-text">Contact Us</span>
-            <div class="spaced-equally">
+            <div class="spaced-equally row">
                 <div class="stretch">
                     <label for="input-name">Input Label</label>
                     <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
@@ -61,7 +61,7 @@
             <label for="input-name">Message</label>
             <input type="text" class="input-field stretch-height toggle" placeholder="    Message Text" required>
             <div class="align-right">
-                <input type="submit" value="Continue" class="btn-colored shorten sectionBtn">
+                <input type="submit" value="Submit" class="btn-colored shorten sectionBtn">
             </div>
         </form>
     </section>
@@ -78,7 +78,7 @@
         </div>
         <form class="stretch">
             <span class="title-text">Contact Us</span>
-            <div class="spaced-equally">
+            <div class="spaced-equally row">
                 <div class="stretch">
                     <label for="input-name">Input Label</label>
                     <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
@@ -103,9 +103,9 @@
     </div>
     </section>
     <section class="section4 index stretch hidden">
-        <form class="stretch">
-            <span class="title-text">Checkout</span>
-            <div class="spaced-equally">
+        <form class="stretch space-between">
+            <p class="title-text">Checkout</p>
+            <div class="spaced-equally row">
                 <div class="stretch">
                     <p>Your Order</p>
                     <div class="order-content">
@@ -119,7 +119,7 @@
                 </div>
                 <div class="stretch">
                     <p>Delivery Details</p>
-                    <div class="spaced-equally">
+                    <div class="spaced-equally row">
                         <div>
                             <p>Adam Sandler</p>
                             <div class="grey">
@@ -139,12 +139,12 @@
             </div>
             <div>
                 <p>Payment Method</p>
-                <div class="spaced-equally">
+                <div class="spaced-equally row">
                     <div class="stretch">
                         <label for="input-name">Input Label</label>
                         <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
                     </div>
-                    <div class="spaced-equally">
+                    <div class="spaced-equally row">
                         <div>
                             <label for="input-name">Input Label</label>
                             <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
@@ -155,6 +155,8 @@
                         </div>
                     </div>
                 </div>
+                <p></p>
+                <p></p>
             </div>
             <div class="align-right">
                 <input type="submit" value="Continue" class="btn-colored shorten sectionBtn">

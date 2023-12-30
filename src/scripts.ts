@@ -3,7 +3,7 @@ import { logDate } from './logDate';
 logDate();
 
 const toggleButton = document.querySelector('#toggle-mode') as HTMLButtonElement;
-const content = document.querySelector('.rf__main') as HTMLElement;
+const content = document.querySelector('.main') as HTMLElement;
 const panel = document.querySelector('.main__panel') as HTMLElement;
 const btns = document.querySelectorAll('.btn');
 const google = document.querySelector('.google') as HTMLElement;
