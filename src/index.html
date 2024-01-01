@@ -11,158 +11,181 @@
     <title>Responsive Forms</title>
 </head>
 <body>
-<section class="main">
-    <div class="main__panel toggle row">
-        <section class="index section1 stretch">
-        <form class="stretch space-between">
-            <label for="input-name">Input Label</label>
-            <input type="text" name="input-name" class="input-field toggle" placeholder="    Placeholder Text" required>
-            <label for="input-password">Input Label</label>
-            <input type="password" class="input-field toggle" placeholder="    ********" required>
-            <div class="panel__toggle">
-                <button type="button" class="switch toggle" id="toggle-mode"></button> 
-                <span>Subscribe to News</span>
-            </div>
-            <input type="submit" value="Sign In" class="btn-colored sectionBtn">
-            <a href="#" class="center-text">Forgot your password?</a>
-            <hr class="stretch grey">
-            <p class="center-text">or continue with</p>
-            <div class="spaced-equally row">
-                <button class="contact1 btn stretch border-outline">
-                    <div class="google toggle-mode"></div>
-                </button>
-                <button class="contact2 btn stretch border-outline">
-                    <div class="facebook toggle-mode"></div>
-                </button>
-            </div>
-        </form>
-    </section>
-    <section class="section2 index stretch hidden">
-        <form class="stretch">
-            <span class="title-text">Contact Us</span>
-            <div class="spaced-equally row">
-                <div class="stretch">
-                    <label for="input-name">Input Label</label>
-                    <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
-                    <label for="input-password">E-mail</label>
-                    <input type="email" class="input-field toggle" placeholder=" Placeholder Text" required>
+<section class="main toggle" data-theme="light">
+    <div class="main__panel stretch toggle" data-theme="light">
+        <section class="index section1 stretch short">
+            <form class="space-between">
+                <label for="input-name">Input Label</label>
+                <input type="text" name="input-name" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
+                <label for="input-password">Input Label</label>
+                <input type="password" data-theme="light" class="input-field toggle" placeholder="    ********" required>
+                <div class="panel__toggle">
+                    <button type="button" data-theme="light" class="switch toggle" id="toggle-mode"></button> 
+                    <span>Subscribe to News</span>
                 </div>
-                <div class="stretch">
-                    <label for="input-name">Input Label</label>
-                    <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
-                    <label for="input-password">Number</label>
-                    <input type="number" class="input-field toggle" placeholder="   123456789" required>
-                </div>
-            </div>
-            <div class="panel__toggle">
-                <button class="checkbox toggle"></button>
-                <span>Subscribe to News</span>
-            </div><br><br>
-            <label for="input-name">Message</label>
-            <input type="text" class="input-field stretch-height toggle" placeholder="    Message Text" required>
-            <div class="align-right">
-                <input type="submit" value="Submit" class="btn-colored shorten sectionBtn">
-            </div>
-        </form>
-    </section>
-    <section class="section3 index stretch hidden">
-        <div class="row">
-        <div class="additional-info">
-            <p>Contact Information</p>
-            <p>Here’s some additional support text to help set user expectations. </p>
-            <img src="assets/images/Vector.svg" alt="phone">
-            <span>123-456-7890</span>
-            <p></p>
-            <img src="assets/images/Union.svg" alt="mail">
-            <span>support@minerva.com</span>
-        </div>
-        <form class="stretch">
-            <span class="title-text">Contact Us</span>
-            <div class="spaced-equally row">
-                <div class="stretch">
-                    <label for="input-name">Input Label</label>
-                    <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
-                    <label for="input-password">E-mail</label>
-                    <input type="email" class="input-field toggle" placeholder=" Placeholder Text" required>
-                </div>
-                <div class="stretch">
-                    <label for="input-name">Input Label</label>
-                    <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
-                    <label for="input-password">Number</label>
-                    <input type="number" class="input-field toggle" placeholder="   123456789" required>
-                </div>
-            </div>
-            <label for="input-name">Input Label</label>
-            <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
-            <label for="input-name">Message</label>
-            <input type="text" class="input-field stretch-height toggle" placeholder="    Message Text" required>
-            <div class="align-right">
-                <input type="submit" value="Submit" class="btn-colored shorten sectionBtn">
-            </div>
-        </form>
-    </div>
-    </section>
-    <section class="section4 index stretch hidden">
-        <form class="stretch space-between">
-            <p class="title-text">Checkout</p>
-            <div class="spaced-equally row">
-                <div class="stretch">
-                    <p>Your Order</p>
-                    <div class="order-content">
-                        <p>Eggshell Plant Pot</p>
-                        <div class="grey">
-                            <p>Size: Medium</p>
-                            <p>Qty: 1</p>
-                            <p>$25.00</p>
-                        </div>
+                <input type="submit" value="Sign In" class="btn-colored js-sectionBtn">
+                <a href="#" class="center-text">Forgot your password?</a>
+                <hr class="stretch grey">
+                <p class="center-text">or continue with</p>
+                <div class="spaced-equally row-special">
+                    <div class="btn-special">
+                        <button class="btn stretch border-outline" data-theme="light">
+                            <div class="google toggle" data-theme="light"></div>
+                        </button>
+                    </div>
+                    <div class="btn-special">
+                        <button class="btn stretch border-outline" data-theme="light">
+                            <div class="facebook toggle" data-theme="light"></div>
+                        </button>
                     </div>
                 </div>
-                <div class="stretch">
-                    <p>Delivery Details</p>
-                    <div class="spaced-equally row">
-                        <div>
-                            <p>Adam Sandler</p>
-                            <div class="grey">
-                                <p>1234 Fake St</p>
-                                <p>Milwaukee, WI 53203</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Shipping Speed</p>
-                            <div class="grey">
-                                <p>$7.00 No Rush Shipping</p>
-                                <p>Arrives by 1/16/22</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Payment Method</p>
-                <div class="spaced-equally row">
+            </form>
+        </section>
+        <section class="section2 index stretch wide hidden">
+            <form class="stretch space-between">
+                <span class="title-text">Contact Us</span>
+                <div class="spaced-equally stretch row">
                     <div class="stretch">
                         <label for="input-name">Input Label</label>
-                        <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
+                        <input type="text" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
                     </div>
-                    <div class="spaced-equally row">
-                        <div>
+                    <div class="stretch">
+                        <label for="input-password">E-mail</label>
+                        <input type="email" data-theme="light" class="input-field toggle" placeholder=" Placeholder Text" required>
+                    </div>
+                </div>
+                <div class="spaced-equally stretch row">
+                    <div class="stretch">
+                        <label for="input-name">Input Label</label>
+                        <input type="text" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
+                    </div>
+                    <div class="stretch">    
+                        <label for="input-number">Number</label>
+                        <input name="input-number" type="number" data-theme="light" class="input-field toggle" placeholder="   123456789" required>
+                    </div>
+                </div>
+                <div class="space-between">
+                    <div class="panel__toggle">
+                        <button class="checkbox toggle"></button>
+                        <span>Subscribe to News</span>
+                    </div>
+                    <div class="stretch">
+                        <label for="input-message">Message</label>
+                        <textarea name="input-message" rows="5" data-theme="light" class="input-field toggle" placeholder="    Message Text" required>
+                        </textarea>
+                    </div>
+                </div>
+                <div class="align-right">
+                    <input type="submit" value="Submit" class="btn-colored shorten js-sectionBtn">
+                </div>
+            </form>
+        </section>
+        <section class="section3 index stretch wide hidden">
+            <div class="row">
+                <div class="additional-info">
+                    <p>Contact Information</p>
+                    <p>Here’s some additional support text to help set user expectations. </p>
+                    <img src="assets/images/Vector.svg" alt="phone">
+                    <span>123-456-7890</span>
+                    <p></p>
+                    <img src="assets/images/Union.svg" alt="mail">
+                    <span>support@minerva.com</span>
+                </div>
+                <form class="stretch space-between">
+                    <span class="title-text">Contact Us</span>
+                    <div class="spaced-equally stretch row">
+                        <div class="stretch">
                             <label for="input-name">Input Label</label>
-                            <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
+                            <input type="text" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
                         </div>
-                        <div>
+                        <div class="stretch">
+                            <label for="input-password">E-mail</label>
+                            <input type="email" data-theme="light" class="input-field toggle" placeholder=" Placeholder Text" required>
+                        </div>
+                    </div>
+                    <div class="spaced-equally stretch row">
+                        <div class="stretch">
                             <label for="input-name">Input Label</label>
-                            <input type="text" class="input-field toggle" placeholder="    Placeholder Text" required>
+                            <input type="text" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
+                        </div>
+                        <div class="stretch">    
+                            <label for="input-number">Number</label>
+                            <input name="input-number" type="number" data-theme="light" class="input-field toggle" placeholder="   123456789" required>
+                        </div>
+                    </div>
+                    <div class="space-between">
+                        <div class="stretch">
+                            <label for="input-message">Message</label>
+                            <textarea name="input-message" rows="5" data-theme="light" class="input-field toggle" placeholder="    Message Text" required>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="align-right">
+                        <input type="submit" value="Submit" class="btn-colored shorten js-sectionBtn">
+                    </div>
+                </form>
+        </div>
+        </section>
+        <section class="section4 index stretch wide hidden">
+            <form class="stretch space-between">
+                <span class="title-text">Checkout</span>
+                <div class="spaced-equally row">
+                    <div class="stretch">
+                        <p>Your Order</p>
+                        <div class="order-content">
+                            <p>Eggshell Plant Pot</p>
+                            <div class="grey">
+                                <p>Size: Medium</p>
+                                <p>Qty: 1</p>
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stretch">
+                        <p>Delivery Details</p>
+                        <div class="spaced-equally row">
+                            <div>
+                                <p>Adam Sandler</p>
+                                <div class="grey">
+                                    <p>1234 Fake St</p>
+                                    <p>Milwaukee, WI 53203</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Shipping Speed</p>
+                                <div class="grey">
+                                    <p>$7.00 No Rush Shipping</p>
+                                    <p>Arrives by 1/16/22</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="align-right">
-                <input type="submit" value="Continue" class="btn-colored shorten sectionBtn">
-            </div>
-        </form>
-    </section>
+                <div class="stretch">
+                    <p>Payment Method</p>
+                    <div class="spaced-equally row">
+                        <div class="stretch">
+                            <label for="input-name">Input Label</label>
+                            <input type="text" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
+                        </div>
+                        <div class="spaced-equally stretch row">
+                            <div class="stretch">
+                                <label for="input-name">Input Label</label>
+                                <input type="text" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
+                            </div>
+                            <div class="stretch">
+                                <label for="input-name">Input Label</label>
+                                <input type="text" data-theme="light" class="input-field toggle" placeholder="    Placeholder Text" required>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="align-right">
+                    <input type="submit" value="Submit" class="btn-colored shorten js-sectionBtn">
+                </div>
+            </form>
+        </section>
     </div>
 </section>
 <script src="/scripts.js"></script>
